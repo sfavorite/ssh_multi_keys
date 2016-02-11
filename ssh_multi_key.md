@@ -27,6 +27,8 @@ You can name the keys when you generate them, which I highly recommend so you do
 Here is where you can put your own name in:
 ![Key Name](https://github.com/sfavorite/ssh_multi_keys/blob/master/images/ssh_key_name.jpg)
 
+At the prompt enter a name that makes sense to you. I use 'servername_rsa' that way the name of the key tells me which server and the rsa tells me the encryption protocol I used. 
+
 
 ## Copy key to remote server
 
