@@ -1,7 +1,7 @@
 
 # Using multiple ssh keys
 
-I like to use multiple ssh keys so if I need to revoke a key I only have to replace that one key on my laptop and the server I authenticate to with that key. 
+I like to use multiple ssh keys so if I need to revoke a key I only have to replace that one key pair on my laptop and the server I authenticate to with that key. 
 
 This is my (simplified) environment
 
