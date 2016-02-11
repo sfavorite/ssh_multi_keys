@@ -79,15 +79,15 @@ Host github
 
     HostName github.com
     
-    IdentityFile ~/.ssh/git_rsa
+      IdentityFile ~/.ssh/git_rsa
     
-    User sfavorite
+      User sfavorite
 
 Host digital
 
-    HostName p1.scotfavorite.net
+    'HostName p1.scotfavorite.net
     
-    IdentityFile ~/.ssh/digitalocean_rsa
+      IdentityFile ~/.ssh/digitalocean_rsa
     
-    User root
-    
+      User root
+    '
