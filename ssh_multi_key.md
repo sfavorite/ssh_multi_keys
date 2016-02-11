@@ -76,12 +76,18 @@ Let's break down what each of the four lines does.
 Here is a short version of my config file.
 
 Host github
+
     HostName github.com
+    
     IdentityFile ~/.ssh/git_rsa
+    
     User sfavorite
 
 Host digital
+
     HostName p1.scotfavorite.net
+    
     IdentityFile ~/.ssh/digitalocean_rsa
+    
     User root
     
