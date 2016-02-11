@@ -34,4 +34,4 @@ digital_key.pub
 ## Naming your key's 
 You can name the keys when you generate them, which I highly recommend so you don't get them confused since the default will name them all the same...not to mention over write existing keys. 
 
-![Key Name](images/ssh_key_name.jpeg)
+![Key Name](https://github.com/sfavorite/ssh_multi_keys/images/ssh_key_name.jpeg)
