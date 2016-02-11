@@ -34,19 +34,18 @@ At the prompt enter a name that makes sense to you. I use 'servername_rsa' that 
 
 Once you have generated your keys copy the public key (the one with the .pub). Do NOT copy the private key (the one with no extension). 
 
-
+```
 $ scp ~.ssh/server1_key.pub username@server1:
-
+```
 
 This will added to the home directory of username.
 
 Now add the rsa key to your authorized keys file. 
 
+```
 cat ~/server1_key.pub >> ~/.ssh/authorized_keys
-
-Remove the key from the home directory.
-
-rm server1_key.pub
+rm ~/server1_key.pub
+```
 
 ## SSH config file
 
@@ -54,8 +53,10 @@ Now that you have the keys added, you need to setup a config file on your laptop
 
 In your home directory create a config file if one does NOT already exist. If one already exists skip creating a new file and use the existing. 
 
+```
 $ touch .ssh/config
 $ chmod 700 .ssh/config
+```
 
 This will set the permissions to read only for the user. 
 
@@ -75,6 +76,7 @@ Let's break down what each of the four lines does.
 
 Here is a short version of my config file.
 
+```
 Host github
 
     HostName github.com
@@ -85,9 +87,12 @@ Host github
 
 Host digital
 
-    'HostName p1.scotfavorite.net
+    HostName p1.scotfavorite.net
     
       IdentityFile ~/.ssh/digitalocean_rsa
     
       User root
-    '
+```
+
+Hope this helps you manage your ssh keys in a secure manner. 
+    
