@@ -3,7 +3,7 @@
 
 I like to use multiple ssh keys so if I need to revoke a key I only have to replace that one key pair on my laptop and the server I authenticate to with that key.
 
-Before doing any of the steps I <strong>highly</strong> recommend backup ing up all of the files in your .ssh directory. If you do not you can/will lock yourself out of accounts/systems! You have been warned! 
+Before doing any of the steps I <strong>highly</strong> recommend backing up all of the files in your .ssh directory. If you do not you can/will lock yourself out of accounts/systems! You have been warned! 
 
 
 ## This is my (simplified) environment
