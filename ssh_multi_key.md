@@ -3,6 +3,8 @@
 
 I like to use multiple ssh keys so if I need to revoke a key I only have to replace that one key pair on my laptop and the server I authenticate to with that key.
 
+Before doing any of the steps I <strong>highly</strong> recommend backup ing up all of the files in your .ssh directory. If you do not you can/will lock yourself out of accounts/systems! You have been warned! 
+
 
 ## This is my (simplified) environment
 
@@ -24,12 +26,12 @@ digital_key.pub
 
 ## Naming your keys
 
-You can name the keys when you generate them, which I highly recommend so you don't get them confused since the default will name them all the same...not to mention over write existing keys.
+You can name the keys when you generate them, which I highly recommend so you don't get them confused since the default behavior of ssh-keygen is to name them all the same...not to mention over write existing keys.
 
 Here is where you can put your own name in:
 ![Key Name](https://github.com/sfavorite/ssh_multi_keys/blob/master/images/ssh_key_name.jpg)
 
-At the prompt enter a name that makes sense to you. I use 'servername_rsa' that way the name of the key tells me which server and the rsa tells me the encryption protocol I used.
+At the prompt enter a name that makes sense to you <strong>If you don't not put a custom name you will over any exisiting id_rsa key you have</strong>. I use 'servername_rsa' that way the name of the key tells me which server and the rsa tells me the encryption protocol I used.
 
 
 ## Copy key to remote server
@@ -96,6 +98,6 @@ Host digital
     User root
 ```
 
-Please note in the above configuration the first line 'Host github.com' is the resolvable name. It needs to be github.com since you will be using commands such as 'git remote add origin git@github.com/sfavorite/coolstuff' and your system will try to match what is after the @ with your config file. The second server configuration starts with 'Host digital'. I have set my /etc/hosts file so the word digital resolves to my droplet. If you don't want to change your host file you should have p1.yourdomain.com. 
+Please note in the above configuration the first line 'Host github.com' is the resolvable name. It needs to be github.com since you will be using commands such as 'git remote add origin git@github.com/sfavorite/coolstuff' and your system will try to match what is after the @ with your config file. The second server configuration starts with 'Host digital'. I have set my /etc/hosts file so the word digital resolves to my droplet. If you don't want to change your host file you should have p1.yourdomain.com.
 
 Hope this helps you manage your ssh keys in a secure manner.
