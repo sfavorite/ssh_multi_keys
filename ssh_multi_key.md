@@ -3,7 +3,7 @@
 
 I like to use multiple ssh keys so if I need to revoke a key I only have to replace that one key pair on my laptop and the server I authenticate to with that key.
 
-Before doing any of the steps I <strong>highly</strong> recommend backing up all of the files in your .ssh directory. If you do not you can/will lock yourself out of accounts/systems! You have been warned! 
+Before doing any of the steps I <strong>highly</strong> recommend backing up all of the files in your .ssh directory. If you do not you can/will lock yourself out of accounts/systems! You have been warned!
 
 
 ## This is my (simplified) environment
@@ -26,7 +26,7 @@ digital_key.pub
 
 ## Naming your keys
 
-You can name the keys when you generate them, which I highly recommend so you don't get them confused since the default behavior of ssh-keygen is to name them all the same...not to mention over write existing keys.
+You can name the keys when you generate them, which I highly recommend so you don't get them confused since the default behavior of ssh-keygen is to name them all the same...not to mention over write existing keys. You did back up your .ssh directory, right? Warned twice.
 
 Here is where you can put your own name in:
 ![Key Name](https://github.com/sfavorite/ssh_multi_keys/blob/master/images/ssh_key_name.jpg)
