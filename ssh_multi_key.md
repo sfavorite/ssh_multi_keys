@@ -121,6 +121,6 @@ Please note in the above configuration the first line 'Host github.com' is the r
 
 ## Test connection
 
-[Test Login](https://github.com/sfavorite/ssh_multi_keys/blob/master/images/testing_login.jpg)
+![Test Login](https://github.com/sfavorite/ssh_multi_keys/blob/master/images/testing_login.jpg)
 
 Hope this helps you manage your ssh keys in a secure manner.
