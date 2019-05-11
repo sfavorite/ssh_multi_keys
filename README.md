@@ -10,13 +10,14 @@ Before doing any of the steps I <strong>highly</strong> recommend backing up all
 
 
 ### On my laptop  
-Github keys         
+My Github keys         
 ***
 github_key.pub
 
 github_key
 
-Digital Ocean keys (hosting site)
+
+My Digital Ocean keys (hosting site)
 ***
 digital_key.pub
 
